@@ -12,21 +12,22 @@
 </head>
 
 <body>
+  <div id="container">
   <header>
     <h1>SHOW ME WHAT YOU GOT!</h1>
   </header>
   <form id="input-form">
-    <label for="url">Meme Image URL:</label>
-    <input class="user" type="url" id="image-url" required placeholder="PASTE YOUR BLANK MEME PHOTO URL HERE" />
+    <label for="url">Meme Image:</label>
+    <input class="user" type="url" id="image-url" required placeholder="MEME PHOTO LINK HERE" />
     <label for="top-text">Top Text:</label>
-    <input class="user" type="text" id="top-text" placeholder="INSERT WITTY TEXT" />
+    <input class="user" type="text" id="top-text" placeholder="WITTY TEXT" />
     <label for="bottom-text">Bottom Text:</label>
-    <input class="user" type="text" id="bottom-text" placeholder="MORE WIT MORE WIT" />
+    <input class="user" type="text" id="bottom-text" placeholder="MORE WITTY TEXT" />
     <input id="submit-all" type="submit" value="THIS IS WHAT I GOT" />
     <input id="clear-all" type="reset" value="REDO ALL" />
   </form>
   <div class="card-deck" id="meme-div"></div>
-
+  </div>
   <script src="app.js"></script>
 
 </body>

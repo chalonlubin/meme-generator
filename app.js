@@ -45,6 +45,5 @@ form.addEventListener("submit", function (e) {
 document.addEventListener("reset", function (e) {
   e.preventDefault();
   const memeHost = document.querySelector("#meme-div");
-  console.log("its clicking");
   memeHost.innerHTML = "";
 });
