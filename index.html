@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stlying.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>Create Memes</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="stlying.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <title>Create Memes</title>
-</head>
-
-<body>
-  <div id="container">
-  <header>
-    <h1>SHOW ME WHAT YOU GOT!</h1>
-  </header>
-  <form id="input-form">
-    <label for="url">Meme Image:</label>
-    <input class="user" type="url" id="image-url" required placeholder="MEME PHOTO LINK HERE" />
-    <label for="top-text">Top Text:</label>
-    <input class="user" type="text" id="top-text" placeholder="WITTY TEXT" />
-    <label for="bottom-text">Bottom Text:</label>
-    <input class="user" type="text" id="bottom-text" placeholder="MORE WITTY TEXT" />
-    <input id="submit-all" type="submit" value="THIS IS WHAT I GOT" />
-    <input id="clear-all" type="reset" value="REDO ALL" />
-  </form>
-  <div class="card-deck" id="meme-div"></div>
-  </div>
-  <script src="app.js"></script>
-
-</body>
-
+  <body>
+    <div id="container">
+      <header>
+        <h1>SHOW ME WHAT YOU GOT!</h1>
+      </header>
+      <form id="input-form">
+        <label for="url">Meme Image:</label>
+        <input
+          class="user"
+          type="url"
+          id="image-url"
+          required
+          placeholder="MEME PHOTO LINK HERE"
+        />
+        <label for="top-text">Top Text:</label>
+        <input
+          class="user"
+          type="text"
+          id="top-text"
+          placeholder="WITTY TEXT"
+        />
+        <label for="bottom-text">Bottom Text:</label>
+        <input
+          class="user"
+          type="text"
+          id="bottom-text"
+          placeholder="MORE WITTY TEXT"
+        />
+        <div class="slider-container">
+          <label id="font-size-label" for="font-size">Text Size:</label>
+          <input
+            id="font-size"
+            type="range"
+            min="16"
+            max="80"
+            value="22"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+        <input id="submit-all" type="submit" value="THIS IS WHAT I GOT" />
+        <input id="clear-all" type="reset" value="REMOVE LAST MEME" />
+      </form>
+      <div class="card-deck" id="meme-div"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
